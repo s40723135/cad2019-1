@@ -15,7 +15,7 @@
 <p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
 <h1>Week</h1>
 <h2>week2</h2>
-<p>week2:建立網站</p>
+<p>week2：建立個人網站</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/KQGeJmjNM3g" width="560"></iframe></p>
 <ul>
 <li>新增新的倉儲，命名為「cad2019」，並設公開</li>
@@ -24,22 +24,34 @@
 <li>利用submodule獲得子模組</li>
 <li>開設近端伺服器修改網頁內容</li>
 <li>將修改內容push上去</li>
-</ul><h2>week3</h2>
-<p>week3:編譯<span>solvespace</span></p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/VjWsFxzI8cI" width="560"></iframe></p>
-<p>先將 Y:\portablegit\bin\sh.exe 改名為 sh_rename_for_solvespace.exe</p>
-<p>git version 查驗 git 版本</p>
-<p>git 2.13 版本以上, 可以使用下列 git clone <span>--recurse-submodules 取得所有子模組資料</span></p>
-<p>git clone --recurse-submodules https://github.com/solvespace/solvespace.git solvespace</p>
-<p>edit Y:\tmp\solvespace\extlib\angle\CMakeLists.txt comment out line 713 and 714</p>
-<p>#list(APPEND ANGLE_DEFINITIONS<br/>#"-DANGLE_PRELOADED_D3DCOMPILER_MODULE_NAMES={ \"d3dcompiler_47.dll\", \"d3dcompiler_46.dll\", \"d3dcompiler_43.dll\" }")<br/>endif()</p>
-<p>需要手動進行 libpng.dll.a 的編譯, 並改名為 libpng_static.a, 並放到編譯系統的 lib 目錄中:</p>
-<p>cd solvespace</p>
-<p>cd extlib</p>
-<p>cd libpng</p>
-<p>mkdir build</p>
-<p>cd build</p>
-<p>cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release<br/>mingw32-make</p>
-<p>rename libpng.dll.a to libpng_static.a and copy to Y:\msys64\mingw64\lib</p>
-<p>接著回到 solvespace 原始碼目錄, 建立 build 目錄後進入 build 目錄, 執行:</p>
-<p><span>cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release</span><br/><span>mingw32-make</span></p>
+</ul>
+<h2>week3</h2>
+<p>week3：編譯<span>solvespace</span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ofn2jmadyn8" width="560"></iframe></span></p>
+<p></p>
+<ul>
+<li>先將 Y:\portablegit\bin\sh.exe 改名為 sh_rename_for_solvespace.exe</li>
+<li>git version 查驗 git 版本</li>
+<li>git 2.13 版本以上, 可以使用下列 git clone <span>--recurse-submodules 取得所有子模組資料</span></li>
+<li>git clone --recurse-submodules https://github.com/solvespace/solvespace.git solvespace</li>
+<li>edit Y:\tmp\solvespace\extlib\angle\CMakeLists.txt comment out line 713 and 714</li>
+<li>#list(APPEND ANGLE_DEFINITIONS<br/>#"-DANGLE_PRELOADED_D3DCOMPILER_MODULE_NAMES={ \"d3dcompiler_47.dll\", \"d3dcompiler_46.dll\", \"d3dcompiler_43.dll\" }")<br/>endif()</li>
+<li>需要手動進行 libpng.dll.a 的編譯, 並改名為 libpng_static.a, 並放到編譯系統的 lib 目錄中:</li>
+<li>cd solvespace</li>
+<li>cd extlib</li>
+<li>cd libpng</li>
+<li>mkdir build</li>
+<li>cd build</li>
+<li>cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release<br/>mingw32-make</li>
+<li>rename libpng.dll.a to libpng_static.a and copy to Y:\msys64\mingw64\lib</li>
+<li>接著回到 solvespace 原始碼目錄, 建立 build 目錄後進入 build 目錄, 執行:</li>
+<li><span>cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release</span><br/><span>mingw32-make</span></li>
+</ul>
+<h2>Week5</h2>
+<p>week5：<strong>繪製   </strong><yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style="">Solvespace Tutorial 11: Cubic Bezier Spline tool (Vase)</yt-formatted-string><br/><span><br/></span><span></span></p>
+<ul>
+<li><span>開啟自己隨身的Solvespace程式。</span></li>
+<li><span>使用三點曲線繪製外型</span></li>
+<li><span>使用直線繪製底座即使圖形成為封閉面</span><span></span></li>
+<li><span>選擇一條線作為旋轉軸，使圖形繞著軸旋轉</span></li>
+</ul>
