@@ -143,7 +143,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a><li class='has-children'><a href='Week.html'>Week</a><ul class='dropdown'><li><a href='week2.html'>week2</a><li><a href='week3.html'>week3</a><li><a href='Week5.html'>Week5</a><li><a href='Week6.html'>Week6</a></li>
+                     <li class='has-children'><a href='Weeks.html'>Weeks</a><ul class='dropdown'><li><a href='Week 2-5.html'>Week 2-5</a><li><a href='Week 6-9.html'>Week 6-9</a><li><a href='Week 10-14.html'>Week 10-14</a><li><a href='Week 15-18.html'>Week 15-18</a></li></ul><li class='has-children'><a href='Note.html'>Note</a><ul class='dropdown'><li><a href='Video production.html'>Video production</a><li><a href='solvespace - 快捷鍵.html'>solvespace - 快捷鍵</a></li></ul><li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a></li>
                       </ul>
                 </nav>
               </div>
@@ -154,29 +154,18 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">week2 << <a href='week2.html'>Previous</a> <a href='Week5.html'>Next</a> >> Week5<br /><h1>week3</h1>
-<p>week3：編譯<span>solvespace</span></p>
-<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ofn2jmadyn8" width="560"></iframe></span></p>
-<p></p>
-<ul>
-<li>先將 Y:\portablegit\bin\sh.exe 改名為 sh_rename_for_solvespace.exe</li>
-<li>git version 查驗 git 版本</li>
-<li>git 2.13 版本以上, 可以使用下列 git clone <span>--recurse-submodules 取得所有子模組資料</span></li>
-<li>git clone --recurse-submodules https://github.com/solvespace/solvespace.git solvespace</li>
-<li>edit Y:\tmp\solvespace\extlib\angle\CMakeLists.txt comment out line 713 and 714</li>
-<li>#list(APPEND ANGLE_DEFINITIONS<br/>#"-DANGLE_PRELOADED_D3DCOMPILER_MODULE_NAMES={ \"d3dcompiler_47.dll\", \"d3dcompiler_46.dll\", \"d3dcompiler_43.dll\" }")<br/>endif()</li>
-<li>需要手動進行 libpng.dll.a 的編譯, 並改名為 libpng_static.a, 並放到編譯系統的 lib 目錄中:</li>
-<li>cd solvespace</li>
-<li>cd extlib</li>
-<li>cd libpng</li>
-<li>mkdir build</li>
-<li>cd build</li>
-<li>cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release<br/>mingw32-make</li>
-<li>rename libpng.dll.a to libpng_static.a and copy to Y:\msys64\mingw64\lib</li>
-<li>接著回到 solvespace 原始碼目錄, 建立 build 目錄後進入 build 目錄, 執行:</li>
-<li><span>cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release</span><br/><span>mingw32-make</span></li>
+    <div id="tipue_search_content">Video production << <a href='Video production.html'>Previous</a> <a href='About.html'>Next</a> >> About<br /><h1>solvespace - 快捷鍵</h1>
+</li>
 </ul>
-<br />week2 << <a href='week2.html'>Previous</a> <a href='Week5.html'>Next</a> >> Week5</div>
+<p><strong>Sketch:</strong></p>
+<p><strong><img alt="" height="753" src="https://s40723242.github.io/cad2019/images/s1.png" width="423"/></strong></p>
+<p><strong>Constrain:</strong></p>
+<p><strong><img alt="" height="820" src="https://s40723242.github.io/cad2019/images/s2.png" width="459"/></strong></p>
+<p><strong>New group:</strong></p>
+<p><strong><img alt="" height="455" src="https://s40723242.github.io/cad2019/images/x3.png" width="370"/></strong></p>
+<p><strong>Perspective:</strong></p>
+<p><strong><img alt="" height="145" src="https://s40723242.github.io/cad2019/images/s4.png" width="378"/></strong></p>
+<br />Video production << <a href='Video production.html'>Previous</a> <a href='About.html'>Next</a> >> About</div>
         
     <!-- footer -->
       <div class="container">
